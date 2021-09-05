@@ -12,10 +12,10 @@ public class Cloth {
     private List<ClothPoint> points;
     private List<ClothConstraint> constraints;
     private List<ClothFace> faces;
-    private int numIterations = 1;
+    private int numIterations = 5;
     private Color color;
 
-    private float gravity = .0981f;
+    private float gravity = 5f;
 
     public Cloth(final List<ClothPoint> points, final List<ClothConstraint> contraints,
                  final List<ClothFace> faces, final Color color) {

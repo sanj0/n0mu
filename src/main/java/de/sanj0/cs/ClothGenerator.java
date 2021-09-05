@@ -72,11 +72,11 @@ public class ClothGenerator {
         Color col;
         for (int y = 0; y < n.getY(); y++) {
             if (y <= n.getY() / 3 - 1) {
-                col = Color.BLACK;
+                col = ColorUtil.GRASS_GREEN;
             } else if (y <= n.getY() * (2f / 3f) - 1) {
-                col = ColorUtil.CRIMSON_RED;
+                col = ColorUtil.TURQUOISE;
             } else {
-                col = ColorUtil.GOLD;
+                col = ColorUtil.DODGER_BLUE;
             }
             for (int x = 0; x < n.getX(); x++) {
                 final ClothPoint p = new ClothPoint(origin.added(d.multiplied(new Vector2f(x, y))), false);
